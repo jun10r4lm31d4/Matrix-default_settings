@@ -1,0 +1,15 @@
+# yq ea -iI 4 'select(fi==0) *? select(fi==1)' config.yaml ../default-facebook.yaml
+
+# Application service host/registration related details.
+# Changing these values requires regeneration of the registration.
+appservice:
+    # The full URI to the database. SQLite and Postgres are supported.
+    # Format examples:
+    #   SQLite:   sqlite:///filename.db
+    #   Postgres: postgres://username:password@hostname/dbname
+    database: postgres://facebook_user:isuorie9fohquoqueu6wahseiNe0Pei9boleip5pohgae5iedieP6aes9oHeig3Z@localhost:5432/facebook
+# Bridge config
+bridge:
+    # Localpart template of MXIDs for Facebook users.
+    # {userid} is replaced with the user ID of the Facebook user.
+    username_template: fb_{userid}
