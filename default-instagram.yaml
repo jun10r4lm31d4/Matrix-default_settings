@@ -1,4 +1,4 @@
-# yq ea -iI 4 'select(fi==0) *? select(fi==1)' config.yaml ../default-instagram.yaml
+# yq ea -iI 4 'select(fi==0) *? select(fi==1)' config.yaml ../default_settings/default-instagram.yaml
 
 # Application service host/registration related details.
 # Changing these values requires regeneration of the registration.

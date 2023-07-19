@@ -1,6 +1,6 @@
-# yq ea -iI 4 'select(fi==0).bridge.double_puppet_server_map = select(fi==1).bridge.double_puppet_server_map | select(fi==0)' config.yaml ../default-overwrite.yaml
-# yq ea -iI 4 'select(fi==0).bridge.login_shared_secret_map = select(fi==1).bridge.login_shared_secret_map | select(fi==0)' config.yaml ../default-overwrite.yaml
-# yq ea -iI 4 'select(fi==0).bridge.permissions = select(fi==1).bridge.permissions | select(fi==0)' config.yaml ../default-overwrite.yaml
+# yq ea -iI 4 'select(fi==0).bridge.double_puppet_server_map = select(fi==1).bridge.double_puppet_server_map | select(fi==0)' config.yaml ../default_settings/default-overwrite.yaml
+# yq ea -iI 4 'select(fi==0).bridge.login_shared_secret_map = select(fi==1).bridge.login_shared_secret_map | select(fi==0)' config.yaml ../default_settings/default-overwrite.yaml
+# yq ea -iI 4 'select(fi==0).bridge.permissions = select(fi==1).bridge.permissions | select(fi==0)' config.yaml ../default_settings/default-overwrite.yaml
 
 # Bridge config
 bridge:
