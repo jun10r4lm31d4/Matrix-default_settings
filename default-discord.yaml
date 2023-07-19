@@ -14,7 +14,7 @@ appservice:
 # Bridge config
 bridge:
     # The prefix for commands. Only required in non-management rooms.
-    command_prefix: "!dd"
+    command_prefix: '!dd'
     # Displayname template for Discord users. This is also used as the room name in DMs if private_chat_portal_meta is enabled.
     # Available variables:
     #   .ID - Internal user ID
