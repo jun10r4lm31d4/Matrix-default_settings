@@ -13,9 +13,9 @@ bridge:
     # Displayname template for Instagram users.
     # {displayname} is replaced with the display name of the Instagram user.
     # {username} is replaced with the username of the Instagram user.
-    displayname_template: {displayname} (IG)
+    displayname_template: "{displayname} (IG)"
     # Displayname template for 1:1 chat portals. Same variables as displayname_template.
-    private_chat_name_template: {displayname} (IG)
+    private_chat_name_template: "{displayname} (IG)"
     # Localpart template of MXIDs for Instagram users.
     # {userid} is replaced with the user ID of the Instagram user.
-    username_template: ig_{userid}
+    username_template: "ig_{userid}"
