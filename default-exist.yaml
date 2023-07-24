@@ -9,9 +9,6 @@ appservice:
         external: https://juniiimoh.pp.ua/public
 # Bridge config
 bridge:
-    # Should contact names and profile pictures be allowed?
-    # This is only safe to enable on single-user instances.
-    allow_contact_info: true
     # Allow invite permission for user. User can invite any bots to room with whatsapp
     # users (private chat and groups)
     allow_user_invite: true
@@ -19,15 +16,6 @@ bridge:
     archive_tag: m.lowpriority
     # Settings for backfilling messages.
     backfill:
-        # Use double puppets for backfilling?
-        #
-        # If using MSC2716, the double puppets must be in the appservice's user ID namespace
-        # (because the bridge can't use the double puppet access token with batch sending).
-        #
-        # Even without MSC2716, bridging old messages with correct timestamps requires the double
-        # puppets to be in an appservice namespace, or the server to be modified to allow
-        # overriding timestamps anyway.
-        double_puppet_backfill: true
         # Enable backfill queue? This is used for backfilling additional threads after the initial sync,
         # and when MSC2716 is enabled, to backfill message history going backwards.
         enable: true
@@ -54,9 +42,6 @@ bridge:
         # Conversations that have a last message that is less than this number
         # of hours ago will have their unread status synced from Facebook.
         unread_hours_threshold: -1
-    bridge_notices:
-        # Whether or not Matrix bot messages (type m.notice) should be bridged.
-        default: true
     # Send captions in the same message as images. This will send data compatible with both MSC2530 and MSC3552.
     # This is currently not supported in most clients.
     caption_in_message: true
@@ -76,7 +61,6 @@ bridge:
         # This will cause the bridge bot to be in private chats for the encryption to work properly.
         default: true
     # Should polls be sent using MSC3381 event types?
-    extev_polls: true
     # Settings for handling history sync payloads.
     history_sync:
         # Settings for immediate backfills. These backfills should generally be small and their main purpose is
@@ -85,6 +69,12 @@ bridge:
         immediate:
             # The maximum number of events to backfill initially.
             max_events: 50
+        # The maximum number of initial conversations that should be synced.
+        # Other conversations will be backfilled on demand when receiving a message or when initiating a direct chat.
+        max_initial_conversations: 50
+        # Maximum number of messages to backfill in each conversation.
+        # Set to -1 to disable limit.
+        message_count: -1
         # If this value is greater than 0, then if the conversation's last message was more than
         # this number of hours ago, then the conversation will automatically be marked it as read.
         # Conversations that have a last message that is less than this number of hours ago will
@@ -93,6 +83,8 @@ bridge:
     # Whether or not the Facebook users of logged in Matrix users should be
     # invited to private chats when the user sends a message from another client.
     invite_own_puppet_to_pm: true
+    # Whether the bridge should send the message status as a custom com.beeper.message_send_status event.
+    message_status_events: true
     # When using double puppeting, should muted chats be muted in Matrix?
     mute_bridging: true
     # When using double puppeting, should pinned chats be moved to a specific tag in Matrix?
@@ -119,9 +111,6 @@ bridge:
     # Number of most recently active dialogs to create portals for when syncing chats.
     # Set to 0 to remove limit.
     sync_create_limit: 0
-    # Should all chats be scheduled to be created later?
-    # This is best used in combination with MSC2716 infinite backfill.
-    sync_deferred_create_all: true
     # Should the bridge update the m.direct account data event when double puppeting is enabled.
     # Note that updating the m.direct event is not atomic (except with mautrix-asmux)
     # and is therefore prone to race conditions.
