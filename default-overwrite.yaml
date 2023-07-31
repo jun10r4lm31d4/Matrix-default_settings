@@ -24,5 +24,5 @@ bridge:
     #   domain - All users on that homeserver
     #     mxid - Specific user
     permissions:
-        domain: user
         "@juniiimoh:juniiimoh.pp.ua": admin
+        "@zhunynho:bolha.chat": admin
