@@ -24,3 +24,9 @@ bridge:
     # Localpart template of MXIDs for WhatsApp users.
     # {{.}} is replaced with the phone number of the WhatsApp user.
     username_template: wa_{{.}}
+
+logging:
+    min_level: debug
+    writers:
+        - type: stdout
+          format: pretty-colored
