@@ -6,6 +6,7 @@
 bridge:
     # Servers to always allow double puppeting from
     double_puppet_server_map:
+        bolha.chat: https://bolha.chat
         juniiimoh.pp.ua: http://localhost:8008
     # Shared secrets for https://github.com/devture/matrix-synapse-shared-secret-auth
     #
