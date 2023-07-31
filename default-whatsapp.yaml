@@ -13,6 +13,14 @@ appservice:
         uri: postgres://whatsapp_user:biep7ahng1ahCho7otifo4eefae8bohthohgeaqu9gahkaipo6eeraGhiechaiFo@localhost:5432/whatsapp?sslmode=disable
 # Bridge config
 bridge:
+    # Displayname template for WhatsApp users.
+    # {{.PushName}}     - nickname set by the WhatsApp user
+    # {{.BusinessName}} - validated WhatsApp business name
+    # {{.Phone}}        - phone number (international format)
+    # The following variables are also available, but will cause problems on multi-user instances:
+    # {{.FullName}}  - full name from contact list
+    # {{.FirstName}} - first name from contact list
+    displayname_template: "{{or .FullName .BusinessName .PushName .JID}} (WA)"
     # Localpart template of MXIDs for WhatsApp users.
     # {{.}} is replaced with the phone number of the WhatsApp user.
     username_template: wa_{{.}}
