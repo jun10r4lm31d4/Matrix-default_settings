@@ -81,8 +81,6 @@ bridge:
     # Whether or not the Facebook users of logged in Matrix users should be
     # invited to private chats when the user sends a message from another client.
     invite_own_puppet_to_pm: true
-    # Whether the bridge should send the message status as a custom com.beeper.message_send_status event.
-    message_status_events: true
     # When using double puppeting, should muted chats be muted in Matrix?
     mute_bridging: true
     # When using double puppeting, should pinned chats be moved to a specific tag in Matrix?
