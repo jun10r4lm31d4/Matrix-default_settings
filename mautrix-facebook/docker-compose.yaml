@@ -1,0 +1,33 @@
+---
+version: '3.9'
+name: mautrix-facebook
+# Use with: docker --context kraud.wind3674 compose up -d
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: isuorie9fohquoqueu6wahseiNe0Pei9boleip5pohgae5iedieP6aes9oHeig3Z
+    volumes:
+      - postgres:/var/lib/postgresql/data
+  mautrix-facebook:
+    container_name: mautrix-facebook
+    image: dock.mau.dev/mautrix/facebook:latest
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    labels:
+      kr.ingress.29319: https://fb.*
+    ports:
+      - "29319:29319"
+    volumes:
+      - mautrix-facebook:/data
+
+volumes:
+  postgres:
+    driver_opts:
+      size: 10G
+  mautrix-facebook:
+    driver_opts:
+      size: 100M
