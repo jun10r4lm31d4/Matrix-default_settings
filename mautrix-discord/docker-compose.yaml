@@ -9,6 +9,8 @@ services:
     restart: always
     environment:
       POSTGRES_PASSWORD: ir9Aeciehaeng4iqu5niQu7ohkooK7EeGhaiyoabahkeiquiya0euxie1zeecoof
+    stdin_open: true
+    tty: true
     volumes:
       - postgres:/var/lib/postgresql/data
   mautrix-discord:
@@ -21,6 +23,8 @@ services:
       kr.ingress.29334: https://dd.*
     ports:
       - "29334:29334"
+    stdin_open: true
+    tty: true
     volumes:
       - mautrix-discord:/data
 
