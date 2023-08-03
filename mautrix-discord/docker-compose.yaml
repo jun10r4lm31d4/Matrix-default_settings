@@ -1,10 +1,13 @@
+---
+version: '3.9'
+name: mautrix-discord
+# Use with: docker --context kraud.grass1797 compose up -d
 services:
   postgres:
     container_name: postgres
     image: postgres
     restart: always
     environment:
-      POSTGRES_USER: mautrix-discord
       POSTGRES_PASSWORD: ir9Aeciehaeng4iqu5niQu7ohkooK7EeGhaiyoabahkeiquiya0euxie1zeecoof
     volumes:
       - postgres:/var/lib/postgresql/data
@@ -23,10 +26,8 @@ services:
 
 volumes:
   postgres:
-    driver: nfs
     driver_opts:
       size: 10G
   mautrix-discord:
-    driver: nfs
     driver_opts:
       size: 100M
