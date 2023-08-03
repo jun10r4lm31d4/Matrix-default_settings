@@ -184,7 +184,7 @@ bridge:
         # provisioning endpoint is used or when a message comes in from that
         # chat.
         # If set to -1, all conversations will by synced.
-        max_conversations: 20
+        max_conversations: -1
         # The minimum amount of time to wait between syncing each thread. This
         # helps avoid situations where you sync too quickly.
         min_sync_thread_delay: 5
