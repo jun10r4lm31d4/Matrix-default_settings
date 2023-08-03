@@ -55,18 +55,18 @@ appservice:
         prefix: /public
         # The base URL where the public-facing endpoints are available. The prefix is not added
         # implicitly.
-        external: https://example.com/public
+        external: https://matrix.beeper.com/public
         # Shared secret for integration managers such as mautrix-manager.
         # If set to "generate", a random string will be generated on the next startup.
         # If null, integration manager access to the API will not be possible.
-        shared_secret: vTJNb52dwlz1r6u3dQjCbKeZIdVo8coIlip8na0_PWvIrje_PYZTI1Z627nvD581
+        shared_secret: null
         # Allow logging in within Matrix. If false, users can only log in using the web interface.
         allow_matrix_login: true
         # Segment API key to enable analytics tracking for web server endpoints. Set to null to disable.
         # Currently the only events are login start, success and fail.
-        segment_key:
+        segment_key: null
         # Optional user_id to use when sending Segment events. If null, defaults to using mxID.
-        segment_user_id:
+        segment_user_id: null
 
     # The unique ID of this appservice.
     id: 65624db5-2f3e-4822-86a7-2ea2421f182b
