@@ -1,0 +1,15 @@
+id: 104e85db-4ab6-4108-ac2c-d6e43cb63477
+as_token: Pmiiuci9iPWf23Z5pBLQkJCgfOYPsgLOixZsTAJeYlaDtpgtNBwy3onW_oeO1CzO
+hs_token: RW4qxoDjeBF-8zeb8cUQpbZqGohgqmntI-Q_qqJvk2y3uSfcVC39RSFIgNX7kqct
+namespaces:
+    users:
+    - exclusive: true
+      regex: '@ig_.*:beeper\.local'
+    - exclusive: true
+      regex: '@igbot:beeper\.local'
+    aliases: []
+url: http://35.209.114.185:29330
+sender_localpart: 0Lo0m96frdb3KY8gqA76d5dDFyldHXbZxOh6IwaMvIsYbCjGcoc8MWEowYb-EuxZ
+rate_limited: false
+de.sorunome.msc2409.push_ephemeral: true
+push_ephemeral: true

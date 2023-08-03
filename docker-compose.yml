@@ -1,0 +1,54 @@
+---
+version: "3.9"
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: dohhaeh3uqueniengohqu2neeba6ucahjieGheitheigi6Ohgeiwiupohbaej8ag
+    volumes:
+    - postgres:/var/lib/postgresql/data
+  mautrix-discord:
+    container_name: mautrix-discord
+    image: dock.mau.dev/mautrix/discord:latest
+    restart: unless-stopped
+    volumes:
+    - ./mautrix-discord:/data
+    ports:
+    - "29334:29334"
+  mautrix-facebook:
+    container_name: mautrix-facebook
+    image: dock.mau.dev/mautrix/facebook:latest
+    restart: unless-stopped
+    volumes:
+    - ./mautrix-facebook:/data
+    ports:
+    - "29319:29319"
+  mautrix-instagram:
+    container_name: mautrix-instagram
+    image: dock.mau.dev/mautrix/instagram:latest
+    restart: unless-stopped
+    volumes:
+    - ./mautrix-instagram:/data
+    ports:
+    - "29330:29330"
+  mautrix-telegram:
+    container_name: mautrix-telegram
+    image: dock.mau.dev/mautrix/telegram:latest
+    restart: unless-stopped
+    volumes:
+    - ./mautrix-telegram:/data
+    ports:
+    - "29317:29317"
+  mautrix-whatsapp:
+    container_name: mautrix-whatsapp
+    image: dock.mau.dev/mautrix/whatsapp:latest
+    restart: unless-stopped
+    volumes:
+    - ./mautrix-whatsapp:/data
+    ports:
+    - "29318:29318"
+
+volumes:
+    postgres:

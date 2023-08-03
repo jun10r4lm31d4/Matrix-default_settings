@@ -1,0 +1,17 @@
+id: 36d6f618-d92c-41ea-976f-2dd24711a715
+as_token: RpeVKG9MSSjI_C0LTsWjwb5wL8cnX5T7HSCbr7D5d8uyYqfZf6hkOxhGTai4qzDy
+hs_token: ydP3eYNpj98Izb1lFK4yx8qX0bl8x12yN2dYlC_RUgDZiK1rOeoY6qno6p_ie_PA
+namespaces:
+    users:
+    - exclusive: true
+      regex: '@tg_.*:beeper\.local'
+    - exclusive: true
+      regex: '@tgbot:beeper\.local'
+    aliases:
+    - exclusive: true
+      regex: \#tg_.*:beeper\.local
+url: http://35.209.114.185:29317
+sender_localpart: dlWLOmCocU9ELkjLX8Ceg3l9pdSgnEWW-FIR7xDzd1D3vLWJvxg-Abn3BoZ2OOTi
+rate_limited: false
+de.sorunome.msc2409.push_ephemeral: true
+push_ephemeral: true

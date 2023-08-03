@@ -1,0 +1,14 @@
+id: 009c44e4-6e7c-4a7a-b545-5f6c3041c4cb
+url: http://35.209.114.185:29334
+as_token: CMubtlVjC1DsdZWcmgRyEtAbm7qK9xomUfToAn7UapLSYJWAkXjTRP23ErfTEd2d
+hs_token: IZlYVJu7zaHjmtV3TO26oFaegOsLuwLYj7e7IXCr8Y80WoCG7VeJvVfAYzToCmvj
+sender_localpart: SBc79HIs936cUQC3q1na3GSNEYraBpAg
+rate_limited: false
+namespaces:
+    users:
+        - regex: ^@ddbot:beeper\.local$
+          exclusive: true
+        - regex: ^@dd_.*:beeper\.local$
+          exclusive: true
+de.sorunome.msc2409.push_ephemeral: true
+push_ephemeral: true

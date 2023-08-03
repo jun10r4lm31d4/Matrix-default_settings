@@ -1,0 +1,15 @@
+id: 65624db5-2f3e-4822-86a7-2ea2421f182b
+as_token: RSf0WlPqHRSPFTRar2au4--0detB9e1Sp8Xhmcwp39n1Ta9UOXdxgKLR5GQSxLZk
+hs_token: NgZ-R7CS3naxNlMtYigzjLax-_EXz8pit533TPSjC6SnoREg09Je3ViG-2OoTElk
+namespaces:
+    users:
+    - exclusive: true
+      regex: '@fb_.*:beeper\.local'
+    - exclusive: true
+      regex: '@fbbot:beeper\.local'
+    aliases: []
+url: http://35.209.114.185:29319
+sender_localpart: vu3m-iML1YSvMD3nJi56S3vuaNpze4UkLOdNU-CnT_3-xeXWLOj2mGhA4YuLngNQ
+rate_limited: false
+de.sorunome.msc2409.push_ephemeral: true
+push_ephemeral: true

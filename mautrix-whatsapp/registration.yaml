@@ -1,0 +1,14 @@
+id: 6063ac81-63cd-4a07-b0a9-24cbc46d1e69
+url: http://35.209.114.185:29318
+as_token: mnFPckRrwfPGeUWSMK3UJgXCyI42A62A6w0QCRUPY9r9sxZOGH4QJCPgQiwYhUyB
+hs_token: YfHQ4TE1NFFeiwDFQiMGqLDgCH7r0H4dCcsI0zNr0MOMg3UUDPR3vI4AamNdKESA
+sender_localpart: 24LVGi9q0Uw9EfSEWOyqRqPH12HAP8hj
+rate_limited: false
+namespaces:
+    users:
+        - regex: ^@wabot:beeper\.local$
+          exclusive: true
+        - regex: ^@wa_.*:beeper\.local$
+          exclusive: true
+de.sorunome.msc2409.push_ephemeral: true
+push_ephemeral: true
