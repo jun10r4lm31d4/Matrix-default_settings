@@ -1,0 +1,33 @@
+---
+version: '3.9'
+name: mautrix-instagram
+# Use with: docker --context kraud.wind3674 compose up -d
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 
+    volumes:
+      - postgres:/var/lib/postgresql/data
+  mautrix-instagram:
+    container_name: mautrix-instagram
+    image: dock.mau.dev/mautrix/instagram:latest
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    labels:
+      kr.ingress.29330: https://ig.*
+    ports:
+      - "29330:29330"
+    volumes:
+      - mautrix-instagram:/data
+
+volumes:
+  postgres:
+    driver_opts:
+      size: 10G
+  mautrix-instagram:
+    driver_opts:
+      size: 100M
