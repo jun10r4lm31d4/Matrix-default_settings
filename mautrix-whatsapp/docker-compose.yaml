@@ -1,7 +1,7 @@
 ---
 version: '3.9'
 name: mautrix-whatsapp
-# Use with: docker --context kraud.thunder6377 compose up -d
+# Use with: docker --context kraud.mountain9185 compose up -d
 services:
   postgres:
     container_name: postgres
