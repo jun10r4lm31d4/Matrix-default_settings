@@ -58,7 +58,7 @@ appservice:
         prefix: /public
         # The base URL where the public-facing endpoints are available. The prefix is not added
         # implicitly.
-        external: https://example.com/public
+        external: https://matrix.beeper.com/public
 
     # Provisioning API part of the web server for automated portal creation and fetching information.
     # Used by things like mautrix-manager (https://github.com/tulir/mautrix-manager).
@@ -69,7 +69,7 @@ appservice:
         prefix: /_matrix/provision
         # The shared secret to authorize users of the API.
         # Set to "generate" to generate and save a new token.
-        shared_secret: UHRnWWJ1SUK-8s-zXGBuhezICkbsoCIW8G09DEJ4BhChj4ON-JuHe0i5vGkSQHUA
+        shared_secret: null
 
     # The unique ID of this appservice.
     id: 36d6f618-d92c-41ea-976f-2dd24711a715
@@ -559,9 +559,7 @@ bridge:
         # Whether or not to ignore incoming events sent by the relay bot.
         ignore_own_incoming_events: true
         # List of usernames/user IDs who are also allowed to use the bot commands.
-        whitelist:
-        - myusername
-        - 12345678
+        whitelist: []
 telegram:
     # Get your own API keys at https://my.telegram.org/apps
     api_id: 25190236
