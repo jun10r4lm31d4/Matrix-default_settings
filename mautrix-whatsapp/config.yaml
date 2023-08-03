@@ -27,7 +27,7 @@ homeserver:
 # Changing these values requires regeneration of the registration.
 appservice:
     # The address that the homeserver can use to connect to this appservice.
-    address: http://35.209.114.185:29318
+    address: https://wa.ihybkxxkq.1d.pt
     
     # The hostname and port where this appservice should listen.
     hostname: 0.0.0.0
