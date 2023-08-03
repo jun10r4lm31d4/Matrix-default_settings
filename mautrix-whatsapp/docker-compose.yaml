@@ -1,0 +1,37 @@
+---
+version: '3.9'
+name: mautrix-whatsapp
+# Use with: docker --context kraud.thunder6377 compose up -d
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: biep7ahng1ahCho7otifo4eefae8bohthohgeaqu9gahkaipo6eeraGhiechaiFo
+    stdin_open: true
+    tty: true
+    volumes:
+      - postgres:/var/lib/postgresql/data
+  mautrix-whatsapp:
+    container_name: mautrix-whatsapp
+    image: dock.mau.dev/mautrix/whatsapp:latest
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    labels:
+      kr.ingress.29318: https://wa.*
+    ports:
+      - "29318:29318"
+    stdin_open: true
+    tty: true
+    volumes:
+      - mautrix-whatsapp:/data
+
+volumes:
+  postgres:
+    driver_opts:
+      size: 10G
+  mautrix-whatsapp:
+    driver_opts:
+      size: 100M
