@@ -1,14 +1,10 @@
-id: 009c44e4-6e7c-4a7a-b545-5f6c3041c4cb
-url: http://35.209.114.185:29334
-as_token: CMubtlVjC1DsdZWcmgRyEtAbm7qK9xomUfToAn7UapLSYJWAkXjTRP23ErfTEd2d
-hs_token: IZlYVJu7zaHjmtV3TO26oFaegOsLuwLYj7e7IXCr8Y80WoCG7VeJvVfAYzToCmvj
-sender_localpart: SBc79HIs936cUQC3q1na3GSNEYraBpAg
-rate_limited: false
+id: 183718c8-804c-43eb-a83f-a840267ec080
+url: https://dd.i6tf3f9qj.1d.pt
+as_token: hua_KSnEJ9JEbSi8QQ6Yfem4eKqBWrRiVuODIkTc6aWHjEtZdh6pwbhmL_0VszfN
+hs_token: huh_mgRBnYOjIIUjE4AIL5HIJvhN5Pmp6yTRONeajXYD920os10bRPMc0_U3kma2
+sender_localpart: ddbot
 namespaces:
     users:
-        - regex: ^@ddbot:beeper\.local$
+        - regex: '@dd_.+:beeper\.local'
           exclusive: true
-        - regex: ^@dd_.*:beeper\.local$
-          exclusive: true
-de.sorunome.msc2409.push_ephemeral: true
 push_ephemeral: true
