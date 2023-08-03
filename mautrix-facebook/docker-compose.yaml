@@ -9,6 +9,8 @@ services:
     restart: always
     environment:
       POSTGRES_PASSWORD: isuorie9fohquoqueu6wahseiNe0Pei9boleip5pohgae5iedieP6aes9oHeig3Z
+    stdin_open: true
+    tty: true
     volumes:
       - postgres:/var/lib/postgresql/data
   mautrix-facebook:
@@ -21,6 +23,8 @@ services:
       kr.ingress.29319: https://fb.*
     ports:
       - "29319:29319"
+    stdin_open: true
+    tty: true
     volumes:
       - mautrix-facebook:/data
 
