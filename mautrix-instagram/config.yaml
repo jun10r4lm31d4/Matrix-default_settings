@@ -26,7 +26,7 @@ homeserver:
 # Changing these values requires regeneration of the registration.
 appservice:
     # The address that the homeserver can use to connect to this appservice.
-    address: http://35.209.114.185:29330
+    address: https://ig.i8xxyxjpk.1d.pt
     # When using https:// the TLS certificate and key files for the address.
     tls_cert: false
     tls_key: false
