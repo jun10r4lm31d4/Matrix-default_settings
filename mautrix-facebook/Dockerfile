@@ -1,3 +1,5 @@
+#!/usr/bin/env -S docker build . --tag=fb:latest --file
+
 FROM dock.mau.dev/mautrix/facebook:latest
 
 COPY config.yaml /data/

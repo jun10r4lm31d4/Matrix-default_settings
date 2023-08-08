@@ -1,3 +1,5 @@
+#!/usr/bin/env -S docker build . --tag=wa:latest --file
+
 FROM dock.mau.dev/mautrix/whatsapp:latest
 
 COPY config.yaml /data/
