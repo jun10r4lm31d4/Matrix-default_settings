@@ -1,8 +1,9 @@
-id: 183718c8-804c-43eb-a83f-a840267ec080
-url: https://dd.i6tf3f9qj.1d.pt
-as_token: hua_KSnEJ9JEbSi8QQ6Yfem4eKqBWrRiVuODIkTc6aWHjEtZdh6pwbhmL_0VszfN
-hs_token: huh_mgRBnYOjIIUjE4AIL5HIJvhN5Pmp6yTRONeajXYD920os10bRPMc0_U3kma2
+id: 74234b01-4c7b-4376-be55-f3ffa3d5e04c
+url: https://35.209.114.185:29334
+as_token: hua_hRhbuGDE8dkFvLwShQXo4aRlIlhSjUrPkzTWc1qjdNT6cbYbaojrZ_f7dxR4
+hs_token: huh_wKgMqhIsPz6sBpqZvYF2AHv5kiNDJWLKGpHLznBJW05lZmGn0GauJ_hEGFC3
 sender_localpart: ddbot
+rate_limited: false
 namespaces:
     users:
         - regex: '@dd_.+:beeper\.local'

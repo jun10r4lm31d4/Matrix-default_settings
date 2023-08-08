@@ -1,8 +1,9 @@
-id: 36d6f618-d92c-41ea-976f-2dd24711a715
-url: https://tg.ijxqrthpj.1d.pt
-as_token: hua_LOCtTAr12YlyAMK5LWPfLPX0QUrLFNlgSIwE12vARL6NvEUrXwQXb_9nuXk2
-hs_token: huh_s6IrAexZ0s2VsbZrFOTGqiJO8WQdWanBaIqflcGITKqOA7JSCdz3Q_0khjor
+id: e38aa5ec-5b5c-4da6-b494-5d12287cf448
+url: https://35.209.114.185:29317
+as_token: hua_5iL8vDzn93w4zgDzPbOvw4MCitkaxpD8iElvqAOaimT8hBqW5fj7f_M4Gvb2
+hs_token: huh_9F5MrOuBUjWXxYu464fhL0s75AC1eb9i7dxuFQYGVbU9oOr16kSHz_rl5mT1
 sender_localpart: tgbot
+rate_limited: false
 namespaces:
     users:
         - regex: '@tg_.+:beeper\.local'

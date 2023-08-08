@@ -15,7 +15,7 @@ homeserver:
     # Endpoint for reporting per-message status.
     message_send_checkpoint_endpoint: null
     # Does the homeserver support https://github.com/matrix-org/matrix-spec-proposals/pull/2246?
-    async_media: false
+    async_media: true
     # Should the bridge use a websocket for connecting to the homeserver?
     # The server side is currently not documented anywhere and is only implemented by mautrix-wsproxy,
     # mautrix-asmux (deprecated), and hungryserv (proprietary).
@@ -27,7 +27,7 @@ homeserver:
 # Changing these values requires regeneration of the registration.
 appservice:
     # The address that the homeserver can use to connect to this appservice.
-    address: https://wa.ihybkxxkq.1d.pt
+    address: http://35.209.114.185:29318
 
     # The hostname and port where this appservice should listen.
     hostname: 0.0.0.0

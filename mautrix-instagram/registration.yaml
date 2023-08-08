@@ -1,10 +1,11 @@
-id: 104e85db-4ab6-4108-ac2c-d6e43cb63477
-url: https://ig.i8xxyxjpk.1d.pt
-as_token: hua_8XLbQQFORj1ezXs7KJMQSlfx3mJVWp1tESqkbyZ0oupyI9FUNJvz0_WToO32
-hs_token: huh_CAFRXnGHruf3Dd1kAUGLTbPXOC1kKYMq8hVfohLEhL2mt0MogrXW1_4uoqA2
-sender_localpart: igbot
+id: 1ccbcc0f-f4ca-4ca9-a7b0-e0021ea9bfca
+url: https://35.209.114.185:29330
+as_token: hua_KlWSsfxP5UXyqXUUyWN2WD96Dvcp5hRN2PNJMThtGV824OaPM2IuB_5ulza1
+hs_token: huh_zsn0eoaDvwpDF5rPQe7e9zXq2ju665XNJLBJeOvEZ5NTakS2joW4A_53aLH4
+sender_localpart: inbot
+rate_limited: false
 namespaces:
     users:
-        - regex: '@ig_.+:beeper\.local'
+        - regex: '@in_.+:beeper\.local'
           exclusive: true
 push_ephemeral: true

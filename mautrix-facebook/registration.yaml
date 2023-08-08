@@ -1,8 +1,9 @@
-id: 65624db5-2f3e-4822-86a7-2ea2421f182b
-url: https://fb.irf947qcp.1d.pt
-as_token: hua_fCpQtw4IoRaOt2HjUbcLo4oPYoc19u5y7W5icoPEuOKMzQa6Kzzpi_aNIjm3
-hs_token: huh_fKRZZUW1faJXEn5qO1BER1gkvTTUS0hm7OFwVZAeygM0AA2mYGN9u_gU7Np1
+id: cfd64317-e7f1-4fa5-b865-375179c59ddd
+url: https://35.209.114.185:29319
+as_token: hua_85cbwrHXe3jKK63AqAeclOtgvkmLk2kzRPygoIXp2Y6SLQTlnK15g_L2yhb2
+hs_token: huh_6Fjn2k8boUacu4pk6ZHI2CpEGzgvOQLq2q9xKw4sfJ6JUgY1sWAx1_31Q5Y1
 sender_localpart: fbbot
+rate_limited: false
 namespaces:
     users:
         - regex: '@fb_.+:beeper\.local'
