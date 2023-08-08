@@ -3,24 +3,14 @@ version: '3.9'
 name: mautrix-discord
 # Use with: docker --context kraud.grass1797 compose up -d
 services:
-  postgres:
-    container_name: postgres
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: ir9Aeciehaeng4iqu5niQu7ohkooK7EeGhaiyoabahkeiquiya0euxie1zeecoof
-    stdin_open: true
-    tty: true
-    volumes:
-      - postgres:/var/lib/postgresql/data
   mautrix-discord:
     container_name: mautrix-discord
     image: dock.mau.dev/mautrix/discord:latest
     restart: unless-stopped
-    depends_on:
-      - postgres
     labels:
-      kr.ingress.29334: https://dd.*
+      - kr.res.cpu=4Ghz
+      - kr.res.mem=4G
+      - kr.ingress.29334=https://dd.*
     ports:
       - "29334:29334"
     stdin_open: true
@@ -29,9 +19,6 @@ services:
       - mautrix-discord:/data
 
 volumes:
-  postgres:
-    driver_opts:
-      size: 10G
   mautrix-discord:
     driver_opts:
-      size: 100M
+      size: 10G

@@ -20,7 +20,7 @@ homeserver:
     message_send_checkpoint_endpoint:
     # Whether asynchronous uploads via MSC2246 should be enabled for media.
     # Requires a media repo that supports MSC2246.
-    async_media: true
+    async_media: false
 
 # Application service host/registration related details
 # Changing these values requires regeneration of the registration.
@@ -42,7 +42,7 @@ appservice:
     # Format examples:
     #   SQLite:   sqlite:filename.db
     #   Postgres: postgres://username:password@hostname/dbname
-    database: postgres://telegram_user:eegeingooxahmaej5oosh9oyod8ireexaixe9je2aaduezafa8oengai9Aim7ieh@postgres:5432/telegram
+    database: sqlite:/data/database.db
     # Additional arguments for asyncpg.create_pool() or sqlite3.connect()
     # https://magicstack.github.io/asyncpg/current/api/index.html#asyncpg.pool.create_pool
     # https://docs.python.org/3/library/sqlite3.html#sqlite3.connect
@@ -372,7 +372,7 @@ bridge:
         #
         # This requires a server with MSC2716 support, which is currently an experimental feature in Synapse.
         # It can be enabled by setting experimental_features -> msc2716_enabled to true in homeserver.yaml.
-        msc2716: true
+        msc2716: false
         # Use double puppets for backfilling?
         #
         # If using MSC2716, the double puppets must be in the appservice's user ID namespace

@@ -3,24 +3,14 @@ version: '3.9'
 name: mautrix-telegram
 # Use with: docker --context kraud.waterfall8626 compose up -d
 services:
-  postgres:
-    container_name: postgres
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: eegeingooxahmaej5oosh9oyod8ireexaixe9je2aaduezafa8oengai9Aim7ieh
-    stdin_open: true
-    tty: true
-    volumes:
-      - postgres:/var/lib/postgresql/data
   mautrix-telegram:
     container_name: mautrix-telegram
     image: dock.mau.dev/mautrix/telegram:latest
     restart: unless-stopped
-    depends_on:
-      - postgres
     labels:
-      kr.ingress.29317: https://tg.*
+      - kr.res.cpu=4Ghz
+      - kr.res.mem=4G
+      - kr.ingress.29317=https://tg.*
     ports:
       - "29317:29317"
     stdin_open: true
@@ -29,9 +19,6 @@ services:
       - mautrix-telegram:/data
 
 volumes:
-  postgres:
-    driver_opts:
-      size: 10G
   mautrix-telegram:
     driver_opts:
-      size: 100M
+      size: 10G

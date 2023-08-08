@@ -18,7 +18,7 @@ homeserver:
     # Endpoint for reporting per-message status.
     message_send_checkpoint_endpoint: null
     # Does the homeserver support https://github.com/matrix-org/matrix-spec-proposals/pull/2246?
-    async_media: true
+    async_media: false
     # Should the bridge use a websocket for connecting to the homeserver?
     # The server side is currently not documented anywhere and is only implemented by mautrix-wsproxy,
     # mautrix-asmux (deprecated), and hungryserv (proprietary).
@@ -39,13 +39,13 @@ appservice:
     # Database config.
     database:
         # The database type. "sqlite3-fk-wal" and "postgres" are supported.
-        type: postgres
+        type: sqlite3-fk-wal
         # The database URI.
         #   SQLite: A raw file path is supported, but `file:<path>?_txlock=immediate` is recommended.
         #           https://github.com/mattn/go-sqlite3#connection-string
         #   Postgres: Connection string. For example, postgres://user:password@host/database?sslmode=disable
         #             To connect via Unix socket, use something like postgres:///dbname?host=/var/run/postgresql
-        uri: postgres://discord_user:ir9Aeciehaeng4iqu5niQu7ohkooK7EeGhaiyoabahkeiquiya0euxie1zeecoof@postgres:5432/discord?sslmode=disable
+        uri: file:/data/database.db?_txlock=immediate
         # Maximum number of connections. Mostly relevant for Postgres.
         max_open_conns: 20
         max_idle_conns: 2
