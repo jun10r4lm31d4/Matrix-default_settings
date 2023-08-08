@@ -1,0 +1,22 @@
+---
+version: '3.9'
+name: mautrix-twitter
+# Use with: docker --context kraud.???? compose up -d
+services:
+  mautrix-twitter:
+    container_name: mautrix-twitter
+    image: tw:latest
+    restart: unless-stopped
+    labels:
+      - kr.res.cpu=4Ghz
+      - kr.res.mem=4G
+      - kr.ingress.29327=https://tw.*
+    ports:
+      - "29327:29327"
+    stdin_open: true
+    tty: true
+    volumes:
+      - mautrix-twitter:/data
+
+volumes:
+  mautrix-twitter:

@@ -1,0 +1,11 @@
+id: 193c1adc-5126-404f-94d0-a4e7b09c1f15
+url: http://35.209.114.185:29327
+as_token: hua_cZu0DCBb3vwphtnRXWOCOlnnA5MryTPyWYCtXklKZAsAYWRwVoRmW_XUOar2
+hs_token: huh_gPATnBBlFxuUQJdfYPzjZyCIk5NKRQQFEtptg9F9EIQZjEuefJhue_xORCL3
+sender_localpart: twbot
+rate_limited: false
+namespaces:
+    users:
+        - regex: '@tw_.+:beeper\.local'
+          exclusive: true
+push_ephemeral: true

@@ -1,11 +1,11 @@
-id: 1ccbcc0f-f4ca-4ca9-a7b0-e0021ea9bfca
+id: c8b105e5-e49b-4f52-ba0c-b3a1fd8cd5cf
 url: http://35.209.114.185:29330
-as_token: hua_KlWSsfxP5UXyqXUUyWN2WD96Dvcp5hRN2PNJMThtGV824OaPM2IuB_5ulza1
-hs_token: huh_zsn0eoaDvwpDF5rPQe7e9zXq2ju665XNJLBJeOvEZ5NTakS2joW4A_53aLH4
-sender_localpart: inbot
+as_token: hua_jy83NluIrxRs3ircOYnY0lIvWXT2gUD4WlMjHiO71OAs5SXAfu1XJ_0o6IKk
+hs_token: huh_okKcF66BSZBnXdNIXKVWzSiYV0eBXQGNz4KijBIedWYimaAmTIJj3_0EYHTE
+sender_localpart: igbot
 rate_limited: false
 namespaces:
     users:
-        - regex: '@in_.+:beeper\.local'
+        - regex: '@ig_.+:beeper\.local'
           exclusive: true
 push_ephemeral: true
