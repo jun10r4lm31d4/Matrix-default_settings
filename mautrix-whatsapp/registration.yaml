@@ -1,8 +1,9 @@
-id: 6063ac81-63cd-4a07-b0a9-24cbc46d1e69
+id: d2c1f925-24a5-4d85-b8fe-9cb3208edf63
 url: https://wa.ihybkxxkq.1d.pt
-as_token: hua_nxxyFhI0SYbqdGoyKcnPsUS4ulD6IYlUGO4Fd3tr6Aan4WnHQL3Pr_dWX8w1
-hs_token: huh_ipqe8X06AJZZ0JnIZTb0oSO7BlmMqOZNcXjQf8wX2wNnAOeA3ijH6_0LkfcK
+as_token: hua_uDg6EqLUySzxhozktH22lBSxMgLXVQ4dAcA6ho2DyTNJvrVtNiggy_02B3wm
+hs_token: huh_8PQgHrkDO0KLpQFgo2TaBXtP1Dl46zIj1f91VhSmtXKoaT80xvzBc_09KTGm
 sender_localpart: wabot
+rate_limited: false
 namespaces:
     users:
         - regex: '@wa_.+:beeper\.local'

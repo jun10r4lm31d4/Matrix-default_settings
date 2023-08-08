@@ -20,7 +20,7 @@ homeserver:
     message_send_checkpoint_endpoint:
     # Whether asynchronous uploads via MSC2246 should be enabled for media.
     # Requires a media repo that supports MSC2246.
-    async_media: false
+    async_media: true
 
 # Application service host/registration related details
 # Changing these values requires regeneration of the registration.
@@ -46,7 +46,7 @@ appservice:
     # For sqlite, min_size is used as the connection thread pool size and max_size is ignored.
     # Additionally, SQLite supports init_commands as an array of SQL queries to run on connect (e.g. to set PRAGMAs).
     database_opts:
-        min_size: 1
+        min_size: 5
         max_size: 10
     public:
         # Whether or not the public-facing endpoints should be enabled.

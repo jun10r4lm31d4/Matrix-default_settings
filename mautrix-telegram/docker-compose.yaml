@@ -5,7 +5,7 @@ name: mautrix-telegram
 services:
   mautrix-telegram:
     container_name: mautrix-telegram
-    image: dock.mau.dev/mautrix/telegram:latest
+    image: tg:latest
     restart: unless-stopped
     labels:
       - kr.res.cpu=4Ghz

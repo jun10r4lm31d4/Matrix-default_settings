@@ -5,7 +5,7 @@ name: mautrix-whatsapp
 services:
   mautrix-whatsapp:
     container_name: mautrix-whatsapp
-    image: dock.mau.dev/mautrix/whatsapp:latest
+    image: wa:latest
     restart: unless-stopped
     labels:
       - kr.res.cpu=4Ghz
